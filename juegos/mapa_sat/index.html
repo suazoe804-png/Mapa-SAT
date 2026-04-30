@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa SAT - Juego</title>
+  <link rel="stylesheet" href="css/mapa_sat.css">
+</head>
+<body>
+  <main class="mapa-sat-app" aria-label="Juego interactivo Mapa SAT">
+    <section class="carousel" id="iconCarousel" aria-label="Carrusel de íconos">
+      <button class="icon-chip" type="button">🏫</button>
+      <button class="icon-chip" type="button">🏥</button>
+      <button class="icon-chip" type="button">🏛️</button>
+      <button class="icon-chip" type="button">🏭</button>
+      <button class="icon-chip" type="button">🏢</button>
+    </section>
+
+    <section class="map-viewport" id="mapViewport" aria-label="Mapa navegable">
+      <div class="map-surface" id="mapSurface">
+        <div class="map-placeholder">Área de mapa (Sprint 1)</div>
+      </div>
+    </section>
+
+    <header class="hud">
+      <div class="question-box" id="questionBox">¿Dónde se ubica el ícono indicado?</div>
+      <div class="lives" aria-label="Vidas restantes">
+        <img class="life-icon" src="assets/icons/life-buho.png" alt="Vida 1">
+        <img class="life-icon" src="assets/icons/life-buho.png" alt="Vida 2">
+        <img class="life-icon" src="assets/icons/life-buho.png" alt="Vida 3">
+      </div>
+    </header>
+  </main>
+
+  <script src="js/mapa_sat.js"></script>
+</body>
+</html>
